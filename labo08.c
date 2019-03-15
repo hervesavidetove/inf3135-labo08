@@ -10,7 +10,8 @@
 int main(int argc, char *argv[])
 {
    // Testez Array ici.
-
+Array *tableau=creerArray(8);
+printf("%d\n",tableau->taille);
 
    return 0;
 }
