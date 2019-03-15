@@ -3,9 +3,15 @@
 // INF3135 - Mars 2019
 
 #include "array.h"
+#include <stdlib.h>
 
 Array* creerArray(const int taille)
 {
+Array *tab = malloc(sizeof(Array));
+tab->elements=malloc(taille * sizeof(int));
+tab->taille=taille;
+
+return tab;
 
 }
 
